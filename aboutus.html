@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="indexcss.css" />
+
+    <title>VARM Technology</title>
+    <!--Font Awesome Social Media Icons-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!--End of Font Awesome Social Media Icons-->
+
+    <!-------------------------------Java Script Code---------------------------->
+    <script type="text/javascript">
+      function fn1() {
+        var name = document.getElementById("box1").value;
+        var email = document.getElementById("box2").value;
+        var phone = document.getElementById("box3").value;
+        var course = document.getElementById("box4").value;
+        var text = document.getElementById("box5").value;
+        var regx1 = /^([a-z A-z 0-9 \. -]+)@([a-z A-z 0-9 -]+).([a-z A-Z]{2,8})$/;
+        var regx2 = /^[6789]\d{9}$/;
+        if (name == "") {
+          alert("Name cannot be empty!");
+        } else if (email == "") {
+          alert("Email cannot be empty!");
+        } else if (phone == "") {
+          alert("Phone cannot be empty!");
+        } else if (course == "") {
+          alert("Course must be selected");
+        } else if (!regx1.test(email)) {
+          alert("Enter a proper email id");
+        } else if (!regx2.test(phone)) {
+          alert("Enter a proper phone number");
+        } else {
+          document.getElementById("box1").value = "";
+          document.getElementById("box2").value = "";
+          document.getElementById("box3").value = "";
+          //document.getElementById("box4").value="";
+          document.getElementById("box5").value = "";
+          alert(
+            "Thanks " +
+              name +
+              ". We will respond about your query on " +
+              course +
+              " within 2 hours"
+          );
+        }
+      }
+    </script>
+    <!---------------------------End of Java Script Code------------------------->
+  </head>
+  <body>
+    <div class="body">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- <a class="navbar-brand" href="#">VARM</a> -->
+        <img
+          src="images/VARM logo.png"
+          class="img-fluid"
+          alt="Responsive image"
+          style="height: 50px"
+        />
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Course
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="c.html">C</a>
+                <a class="dropdown-item" href="c.html">C++</a>
+                <a class="dropdown-item" href="php.html">Php</a>
+                <a class="dropdown-item" href="htmlcss.html">Html</a>
+                <a class="dropdown-item" href="htmlcss.html">Css</a>
+                <a class="dropdown-item" href="javascript.html">Java Script</a>
+                <a class="dropdown-item" href="net.html">.Net</a>
+                <a class="dropdown-item" href="jsp.html">Jsp</a>
+                <a class="dropdown-item" href="perl.html">Perl</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+      <!-- Carousel -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/image4.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/image5.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/image6.jpeg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!--About us and Our Staff-->
+      <div class="container">
+        <div class="row">
+          <!--About Us-->
+          <div class="col-sm-8">
+            <h2>
+              <span class="badge badge-danger">About VARM Technology</span>
+            </h2>
+            <h6>
+              AMRV Technology is founded in 2020 by Akash Babu, Manideep
+              Kaushal, Ravi Teja and Vishnuvardhan and moving forward in
+              teaching web Designing, PHP, ASP,JSP,perl and c/c++ to students in
+              Karimnagar,Telangana. We hope we will be growing year by year with
+              support of our trainers and students. We are thankful to everyone
+              who has been a part of our success till now. Hope we may also
+              start teaching online with your support and wishes.
+            </h6>
+            <h2>
+              <span class="badge badge-danger"
+                >Inspiration to start AMRV technology</span
+              >
+            </h2>
+            <h6>
+              We (Akash, Manideep, Ravi, vishnu) founders of AMRV Technology,
+              currently persuing our second year of graduation at Indian
+              Institute of Information Technology, Pune. We started AMRV
+              Technology as our Minor Project for the Third Sem .We are really
+              intrested in teaching so that many students can get oppurtunity
+              for quality education. c/c++, html, css, js, php, asp, perl
+              courses are taught by expert teachers of our Academy.
+            </h6>
+            <h2>
+              <span class="badge badge-danger">
+                If you want to become professional in
+              </span>
+            </h2>
+            <ul class="list-group">
+              <li class="list-group-item">Web desiging</li>
+              <li class="list-group-item">PHP</li>
+              <li class="list-group-item">Asp.net</li>
+              <li class="list-group-item">Jsp</li>
+              <li class="list-group-item">Perl</li>
+              <li class="list-group-item">Html</li>
+              <li class="list-group-item">CSS</li>
+              <li class="list-group-item">Java script</li>
+            </ul>
+            <h4>
+              <span class="badge badge-dark">
+                We will help you to achieve your Goal.
+              </span>
+            </h4>
+            <h2>
+              <span class="badge badge-danger"> Our Goal </span>
+            </h2>
+            <h6>
+              Our Main goal is to provide quality education by our expert
+              teachers. The courses we providing are very important for getting
+              you a job. We provide you 100% job assurance.
+            </h6>
+          </div>
+
+          <!--End of About us-->
+          <!--Our Staff-->
+          <div class="col-sm-4">
+            <h1 style="padding-left: 15px">
+              <span class="badge badge-warning">Our Staff</span>
+            </h1>
+            <!-- first row staff -->
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img
+                    src="images/vishnu1.jpg"
+                    alt="..."
+                    class="img-thumbnail"
+                  />
+                  <h5>Vishnu Netha</h5>
+                </div>
+                <div class="col-sm-6">
+                  <img
+                    src="images/sinu1.jpeg"
+                    alt="..."
+                    class="img-thumbnail"
+                  />
+                  <h5>Ankalap Srinivas</h5>
+                </div>
+              </div>
+            </div>
+            <!-- end of first row staff -->
+            <!-- second row staff -->
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="images/lorry.jpg" alt="..." class="img-thumbnail" />
+                  <h5>Laharika</h5>
+                </div>
+                <div class="col-sm-6">
+                  <img src="images/manu.jpg" alt="..." class="img-thumbnail" />
+                  <h5>Manisha</h5>
+                </div>
+              </div>
+            </div>
+            <!-- end of second row staff -->
+            <!--third row staff -->
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="images/akku1.jpg" alt="..." class="img-thumbnail" />
+                  <h5>Akshaya</h5>
+                </div>
+                <div class="col-sm-6">
+                  <img
+                    src="images/sasya1.jpg"
+                    alt="..."
+                    class="img-thumbnail"
+                  />
+                  <h5>Sasya</h5>
+                </div>
+              </div>
+            </div>
+            <!-- end of third row staff -->
+            <!-- of fourth row staff -->
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img
+                    src="images/manideep.jpg"
+                    alt="..."
+                    class="img-thumbnail"
+                  />
+                  <h5>Manideep</h5>
+                </div>
+                <div class="col-sm-6">
+                  <img src="images/ravi1.jpg" alt="..." class="img-thumbnail" />
+                  <h5>Ravi Teja</h5>
+                </div>
+              </div>
+            </div>
+            <!-- end of fourth row staff -->
+            <!-- end of fourth row staff -->
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="images/akash.jpg" alt="..." class="img-thumbnail" />
+                  <h5>Akash Babu</h5>
+                </div>
+                <div class="col-sm-6"></div>
+              </div>
+            </div>
+            <!--fifth row staff -->
+          </div>
+        </div>
+      </div>
+      <!--End of About-->
+      <!--social media-->
+      <h1>
+        Follow us on <span class="badge badge-success">Social Media</span>
+      </h1>
+      <div class="container socialicons col-sm-12">
+        <ul class="unorderedlist">
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100009181504517"
+              target="blank"
+              class="anchor"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/vishnu_ne_tha/"
+              target="blank"
+              class="anchor"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/vishnunetha21/"
+              target="blank"
+              class="anchor"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/vishnu_ne_tha"
+              target="blank"
+              class="anchor"
+              ><i class="fa fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <!--end of social media-->
+
+      <!--Footer-->
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017-2020 VARM Technology</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

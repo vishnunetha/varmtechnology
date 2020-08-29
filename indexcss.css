@@ -18,8 +18,9 @@
 .socialicons {
   padding-top: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* float:right; */
+  /* justify-content: center;
+  align-items: center; */
   background: #f5f5f5;
 }
 ul li {
