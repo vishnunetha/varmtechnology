@@ -13,15 +13,24 @@
 }
 .unorderedlist {
   position: relative;
-  display: flex;
+  /* display: flex; */
 }
 .socialicons {
   padding-top: 10px;
   display: flex;
-  /* float:right; */
-  /* justify-content: center;
-  align-items: center; */
-  background: #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 ul li {
   position: relative;
@@ -48,7 +57,7 @@ ul li {
 
 .anchor:hover {
   color: #999;
-  transform: translateY(-20px);
+  transform: translateX(20px);
   box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2),
     2px 24px 10px rgba(0, 0, 0, 0.2);
 }
@@ -80,4 +89,3 @@ ul li:nth-child(3) a::before {
 ul li:nth-child(4) a::before {
   background: #1da1f2;
 }
-abc
